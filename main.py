@@ -16,6 +16,3 @@ def privacy_policy():
 @app.route('/disclaimer', methods=['GET', 'POST'])
 def disclaimer():
     return render_template('disclaimer.html')
-
-if __name__ == '__main__':
-    app.run(debug=True, port=1970)
