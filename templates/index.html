@@ -1,0 +1,456 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<body>
+ 
+    <div class="bg-blue-light">
+        <div class="container py-2">
+        </div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-4 order-lg-2">
+                    <p class="pt-5 d-none d-lg-block">
+                        <img src="{{ url_for('static', filename='img/logo.jfif') }}" alt="thunderbird migration tool box"
+                            layout="intrinsic" height="500" style="width: 600px;"></img>
+                    </p>
+                </div>
+                <div class="col-lg-8 order-lg-1">
+                    <h1 class="pb-4"><span class="smaller text-blue"> Cleanzy Email Cleaner </span> <span
+                            class="font-weight-bold"> Email Cleaner Tool</span></h1>
+                    <p class="lead">Simplest Tool to Clean Up Your Inbox by Deleting Emails Just in Single Click</p>
+                    <p class="clearfix h5 padding-btm-20">
+                        <amp-img src="../../imgp/star-rating.webp" alt="star" layout="intrinsic" width="141"
+                            height="30"></amp-img><span class="overall-rating" property="aggregateRating"
+                            typeof="AggregateRating"> <span id="avgrat" property="ratingValue">4.6</span> (<span
+                                id="totalrat" property="ratingCount">38</span> Reviews) <span id="msg"></span> </span>
+                    </p>
+                    <ul class="list-check">
+                        <li>Delete Emails <strong>Along with Attachments</strong> to Reduce Occupied Space</li>
+                        <li><strong>Advanced Filters Available</strong> to Delete Only Specific Emails from Inbox</li>
+                        <li>Make Sure to <strong>Backup Emails from Cloud</strong> Before Deleting Them from Server</li>
+                        <li><strong>Can’t Retrieve Mailbox Items</strong> Once Emails & Attachments Deleted</li>
+                        <li>Empty Inbox & Other Mailbox Folders of Your<strong> Gmail, Office 365, Yahoo
+                                Account</strong></li>
+                        <li>Delete Emails on Basis of <strong>Date Range </strong>by Choosing Initial Date & Final Date
+                        </li>
+                        <li>Users Can Delete Emails with <strong>Specific Subject of Emails & Messages</strong></li>
+                        <li>Separate Option Available to <strong>Delete Email Attachments from Webmail Account</strong>
+                        </li>
+                        <li><strong>Empty Your Inbox by Deleting Emails </strong>Sent ‘From’ or Send ‘To’ Meta
+                            Properties</li>
+                        <li>Created SavingLog report Which Includes All Details <strong>Regarding EmailRasor
+                                Tool</strong></li>
+                    </ul>
+                    <p class="pb-3 text-lg-left text-center d-lg-block">
+                        <a href="https://www.recoverytools.com/dl/setup-email-cleaner.exe" rel="nofollow"
+                            class="btn btn-lg btn-green p-2 px-4 my-3 btn-lg-block">
+                            <svg class="align-middle" width="20" height="20">
+                                <use xlink:href="#icon-download" fill="#FFF" />
+                            </svg>
+                            Download for Windows <span class="text-small">100% Safe &amp; Secure</span> </a>
+                      
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="course-head">
+            <h2 class="course-title"> WHY EMAIL CLEANER TOOL ? </h2>
+        </div>
+        <p class="mb-3">Many times, users are using various Webmail services like Gmail, Yahoo, Office 365 etc.
+            Unfortunately, every Email Service has size quota limit. Once email messages storage size reaches the
+            allowed storage of particular email service, users face challenge to store new email messages. Cleanzy Email Cleaner Software is a very special application designed to reduce space from your Webmail account by
+            deleting unwanted emails. </p>
+        <div class="row mt-5">
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/mail.png') }}" alt="mail_open-check.png" layout="intrinsic"
+                                width="64" height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="font-weight-bold h5 mb-2">Easily Clean Your Mailbox Folders</p>
+                        <p>With Email Cleaner software, a user can easily delete all the emails received in the Inbox
+                            folder. Apart from inbox, the software will list all the mailbox folders in its left pane,
+                            where user can select all unwanted folders to delete. It supports deletion of all type of
+                            mailbox folders including Inbox, Drafts, Sent Items, Deleted Items, Junk Emails, Outbox etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/mails-ok.png') }}" alt="visitor_id-ok2.png" layout="intrinsic"
+                                width="64" height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="font-weight-bold h5 mb-2">Delete Only Specific Items using Filters</p>
+                        <p>You can delete only specific emails from your mailbox by applying the filters settings. These
+                            filters can be applied on the basis of To, From, Subject or Date Range. i.e. If you want to
+                            delete emails obtained from submit@cleanzy.com, then you can paste this email address
+                            in From section of Advanced Filters Settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/address_book_open-list.png') }}" alt="address_book_open-list.png"
+                                layout="intrinsic" width="64" height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="font-weight-bold h5 mb-2">Batch Mode to Clean Multiple Accounts</p>
+                        <p>The best thing about Email Cleaner toolkit is that it supports batch processing of multiple
+                            accounts to delete their emails. Users can provide the account login credentials of all
+                            these accounts into the software by listing all of them in a CSV file. Each row in CSV file
+                            includes User id & Password of each account.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/visitor_id-ok2.png') }}" alt="mails-ok2.png" layout="intrinsic"
+                                width="64" height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="font-weight-bold h5 mb-2">Delete from Various Webmail Services </p>
+                        <p>Free Email Cleaner tool supports deletion of emails from large number of webmail accounts
+                            including Amazon WorkMail, Gmail, Office 365, Yahoo, Verizon, AOL Mail, Axigen, Comcast,
+                            EarthLink, DreamHost, Exchange Server, FastMail, GMX, GoDaddy, Horde, HostGater, IBM Verse,
+                            IceWarp, IMAP, MDaemon, Rackspace or Rediffmail accounts. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-head">
+            <h2 class="course-title"> RATED AS BEST INBOX CLEANER SOFTWARE BY EXPERTS: </h2>
+        </div>
+        <p class="mb-3">You will be surprised how easy it is to delete thousands of Gmail messages with just a few
+            clicks. The trick is to delete the emails you don't want and keep the emails you want. Computers are stupid
+            and what you tell them will do what you might not believe. Therefore, it is recommended that you make a
+            backup before deleting the emails using the mail backup software.</p>
+        <p class="mb-3">Manually deleting emails from your inbox can be time consuming. After a few hours of searching
+            and filtering, you can delete thousands of emails, but you may run out of space. Most text messages are
+            small. Delete emails with attachments for real impact.</p>
+        <p class="mb-3">Cleanzy Email Cleaner allows users to automatically delete only certain email messages from
+            their webmail account. Provides users with advanced filter settings that allow them to filter only certain
+            email messages and then remove them from their mailboxes. This amazing free email cleaning tool is the
+            perfect choice for all types of users to delete spam emails from their individual inboxes. The interface of
+            this tool is very easy to use and all non-technical users can also use it to clean their webmail archive.
+        </p>
+    </div>
+    <div class="container">
+        <div class="course-head">
+            <div class="course-title"> FEATURES &amp; ITS BENEFITS </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/internet-arrow_up.png') }}" alt="internet-arrow_up" layout="intrinsic"
+                                width="64" height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 class="font-weight-bold h5 mb-2">Deleted Multiple Emails in Bulk Mode</h3>
+                        <p>The Email Cleaner app saves time of the user in deleting multiple emails in bulk mode. No
+                            matter you have a ton of emails in your mailbox, the software will swiftly convert all of
+                            these emails just in a matter of seconds. The EmailRasor software swiftly allow users to
+                            choose all old or unwanted emails & then delete them to reduce your occupied mailbox data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/firewall-ok.png') }}" alt="firewall-ok" layout="intrinsic" width="64"
+                                height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 class="font-weight-bold h5 mb-2">Delete Emails & Attachments</h3>
+                        <p>Best thing about Email Cleaner software is that it supports deletion of emails along with all
+                            inserted attachments. There are no doubt attachments occupies the most space within your
+                            mailbox. The application provides separate option to delete only attachment files embedded
+                            within the emails. All Types of attachments will get deleted to free space in your Inbox.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/mails-add2.png') }}" alt="mails-add2" layout="intrinsic" width="64"
+                                height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 class="font-weight-bold h5 mb-2">Delete Only Specific Emails</h3>
+                        <p>The Email Cleaner Software is designed with advanced algorithms to delete only specific
+                            emails. Any user can apply the filters settings to sort out only the required emails to
+                            delete them. Emails can be filtered out on the basis of Date Range, To, From, Subject or All
+                            the Attachments within the mailbox. Apply the filters & delete only the specific emails to
+                            cleanup your Inbox.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/home-ok.png') }}" alt="home-ok" layout="intrinsic" width="64"
+                                height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 class="font-weight-bold h5 mb-2">Delete All Email Components</h3>
+                        <p>Cleanzy Email Deletion software is best known for performing complete deletion of your
+                            emails & all its components. Once you delete Emails or attachments, you cannot retrieve them
+                            backup in your account. Choose all the files/folders cautiously for deletion. It completely
+                            removes the emails from webmail server storage & you cannot retrieve the items back there.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/mails-find.png') }}" alt="mails-find" layout="intrinsic" width="64"
+                                height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <h4 class="font-weight-bold h5 mb-2">Load Emails by Providing Login Credentials</h4>
+                        <p>The tool offers the ability to easily delete multiple web mail services to free up space from
+                            the mail server. You can log into your online account simply by providing your email account
+                            user credentials, including username and password. Enter your user account credentials, then
+                            click on Log In. If you face any problem while login, visit Settings & Troubleshooting
+                            tutorial.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="text-center">
+                            <amp-img src="{{ url_for('static', filename='img/sitemap.png') }}" alt="sitemap" layout="intrinsic" width="64"
+                                height="64"></amp-img>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <h4 class="font-weight-bold h5 mb-2">100% Safe & Secure Windows Software</h4>
+                        <p>Mailbox Cleaner software by Cleanzy is fully safe & secure application to delete junk
+                            emails. One can try this software on all latest versions & editions of Microsoft Windows
+                            including Windows 10, Windows 8.1, Windows 8, Windows 7, Windows XP, Windows Vista, Windows
+                            Server 2008 R1, Windows Server 2012 R2 etc. for both 32-bit & 64-bit OS configurations. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div class="container py-5">
+        <p class="h3 text-center font-weight-bold">What Customers Are Saying</p>
+        <h5 class="lead text-center h5 pb-5">Cleanzy Email Cleaner Tool Verified Purchase Reviews</h5>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card review-rating">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="rating-section pt-5">
+                                    <div class="rating-number"> 4.6 </div>
+                                    <div class="count-number"> 38 Ratings </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="review--section">
+                                    <div class="single-review"> <span class="title">5 Star</span>
+                                        <div class="review-count-section">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:74%"> </div>
+                                            </div>
+                                        </div>
+                                        <span class="count-review">74%</span>
+                                    </div>
+                                    <div class="single-review"> <span class="title">4 Star</span>
+                                        <div class="review-count-section">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:16%"> </div>
+                                            </div>
+                                        </div>
+                                        <span class="count-review">16%</span>
+                                    </div>
+                                    <div class="single-review"> <span class="title">3 Star</span>
+                                        <div class="review-count-section">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:11%"> </div>
+                                            </div>
+                                        </div>
+                                        <span class="count-review">11%</span>
+                                    </div>
+                                    <div class="single-review"> <span class="title">2 Star</span>
+                                        <div class="review-count-section">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:0%"> </div>
+                                            </div>
+                                        </div>
+                                        <span class="count-review">0%</span>
+                                    </div>
+                                    <div class="single-review"> <span class="title">1 Star</span>
+                                        <div class="review-count-section">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:0%"> </div>
+                                            </div>
+                                        </div>
+                                        <span class="count-review">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-yellow">
+        <div class="container py-5">
+            <p class="h3 text-center font-weight-bold">What Customers Are Saying</p>
+            <h5 class="lead text-center h5 pb-5">Cleanzy Email Cleaner Software Verified Purchase Reviews</h5>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 carousel-inner align-middle">
+                    <amp-carousel id="customers" class="carousel slide" layout="fixed-height" type="slides" height="400"
+                        autoplay="" delay="3000">
+                        <div class="slide-wrap">
+                            <div class="col-lg-8 border shadow-sm bg-white p-4 mx-auto item-card">
+                                <div class="card-img-wrap"> </div>
+                                <div class="text-wrap">
+                                    <div class="text-content">
+                                        <p class="mbr-fonts-style mbr-text card-text display-7 text-left">I must admit
+                                            that there is no other alternative to this application when it comes to
+                                            cleaning up your Mailboxes. This software proves to be very helpful from the
+                                            point of non-technical users. Using this Email Cleanup software, I can
+                                            easily free up space in my Gmail Inbox by deleting all the unwanted emails.
+                                        </p>
+                                        <div class="row align-items-center">
+                                            <div class="text-right pl-3 rounded-circle">
+                                                <img src="{{ url_for('static', filename='img/visitors.png') }}" alt="visitors.png"
+                                                    layout="intrinsic" width="64" height="64"></img>
+                                            </div>
+                                            <div class="col pl-2 py-4 text-left">
+                                                <p class="mb-0">Michael Lamberd</p>
+                                                <p class="small text-muted mb-0">Berlin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrap">
+                            <div class="col-lg-8 border shadow-sm bg-white p-4 mx-auto item-card">
+                                <div class="card-img-wrap"> </div>
+                                <div class="text-wrap">
+                                    <div class="text-content">
+                                        <p class="mbr-fonts-style mbr-text card-text display-7 text-left">I am really
+                                            enjoying this software as I can easily perform deletion of all the unwanted
+                                            emails. It takes mine a lot of time to delete emails manually, but this
+                                            software performs all my required tasks automatically in few seconds. This
+                                            software looked very much promising to me to cleanup my Office 365 mailbox.
+                                        </p>
+                                        <div class="row align-items-center">
+                                            <div class="text-right pl-3 rounded-circle">
+                                                <img src="{{ url_for('static', filename='img/visitors.png') }}" alt="visitors.png"
+                                                    layout="intrinsic" width="64" height="64"></img>
+                                            </div>
+                                            <div class="col pl-2 py-4 text-left">
+                                                <p class="mb-0">Andy Summers</p>
+                                                <p class="small text-muted mb-0">Rio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrap">
+                            <div class="col-lg-8 border shadow-sm bg-white p-4 mx-auto item-card">
+                                <div class="card-img-wrap"> </div>
+                                <div class="text-wrap">
+                                    <div class="text-content">
+                                        <p class="mbr-fonts-style mbr-text card-text display-7 text-left">The best thing
+                                            about Email Cleanup software is that you can use it for lifetime once you
+                                            purchase its license. All of the updates to latest versions are also free
+                                            with this software. The team offers 24 Hrs live chat support to me so that I
+                                            do not face any problem while using the software. Thank you, team
+                                            Cleanzy for providing this powerful toolkit.</p>
+                                        <div class="row align-items-center">
+                                            <div class="text-right pl-3 rounded-circle">
+                                                <img src="{{ url_for('static', filename='img/visitors.png') }}" alt="visitors.png"
+                                                layout="intrinsic" width="64" height="64"></img>
+                                            </div>
+                                            <div class="col pl-2 py-4 text-left">
+                                                <p class="mb-0">Jade Amber</p>
+                                                <p class="small text-muted mb-0">California</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </amp-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg display="none">
+        <symbol viewBox="0 0 50 50" id="icon-features">
+            <path fill="#047aed" fill-rule="evenodd"
+                d="M22.686,2.007C35.183,2.007,45,12.276,45,24.927c0,12.8-9.82,23.066-22.392,23.066A22.706,22.706,0,0,1,0,24.927,22.674,22.674,0,0,1,22.611,2.007h0.075ZM22.538,5.059c-10.638,0-18.82,8.781-18.82,20.09,0,11.087,8.182,19.795,18.893,19.795,10.49,0.149,18.673-8.707,18.673-20.017,0-11.087-8.184-19.868-18.673-19.868H22.538ZM18.743,36a1.547,1.547,0,0,1-1.146-.5L8.484,26.171a1.664,1.664,0,0,1,0-2.346l2.6-2.659a1.572,1.572,0,0,1,2.291,0l5.371,5.5L30.631,14.492a1.572,1.572,0,0,1,2.291,0l2.6,2.659a1.664,1.664,0,0,1,0,2.346L19.889,35.5A1.548,1.548,0,0,1,18.743,36Z">
+            </path>
+        </symbol>
+        <symbol viewBox="0 0 50 50" id="icon-stars">
+            <path
+                d="M46.442,18.784L32.568,16.759,26.349,4.142A1.576,1.576,0,0,0,24.995,3a1.575,1.575,0,0,0-1.354,1.137L17.422,16.759,3.548,18.784Q2,19.033,2,20.059a2.115,2.115,0,0,0,.691,1.331l10.06,9.817L10.374,45.073a4.446,4.446,0,0,0-.055.555,1.637,1.637,0,0,0,.29.984,1,1,0,0,0,.871.4,2.343,2.343,0,0,0,1.106-.333l12.409-6.545L37.4,46.681a2.231,2.231,0,0,0,1.106.333,0.976,0.976,0,0,0,.843-0.4,1.637,1.637,0,0,0,.29-0.984,4.263,4.263,0,0,0-.028-0.555L37.238,31.207,47.271,21.39a2.008,2.008,0,0,0,.719-1.331q0-1.026-1.548-1.276h0Z">
+            </path>
+        </symbol>
+    </svg>
+
+    <script>
+        $('document').ready(function(){
+            var home = document.getElementById('home_link');
+            $('#home_link').addClass('active');
+            alert(home)
+        });
+    </script>
+
+</body>
+    
+{% endblock body %}

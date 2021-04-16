@@ -1,0 +1,289 @@
+{% extends 'layout.html' %}
+{% block body %}
+<section class="block-padding-top-60-mobile-32 hero mid">
+    <h1> Manage your emails efficiently with the best email cleaner </h1>
+    <p> Cleanzy Email Cleaner includes a variety of powerful tools and features to help you quickly clean out an overloaded
+        mailbox, then easily keep it clean going forward by automating email cleaning tasks as you go. It's designed
+        as a bulk email cleaner and works with groups of emails.
+</section>
+<div id=screenshot-wrapper>
+    <section id=screenshot-container>
+        <div class=ocean></div>
+        <div class=sun></div><img alt="Cleanzy Email Cleaner interface" class="desktop lazyload screenshot"
+            src="{{ url_for('static', filename='svg/interface-desktop.svg') }}">
+        <div class=highlights>
+            <div class="inbox scalable" title="Use filters to find emails you want to clean"><img
+                    alt="Use filters to find emails you want to clean." class="desktop lazyload"
+                    src="{{ url_for('static', filename='svg/highlight-inbox.svg') }}"><img
+                    alt="Use filters to find emails you want to clean." class="lazyload phone" src=""></div>
+            <div class="groups scalable"
+                title="Delete multiple emails at once by grouping them by sender, size, date, and more">
+                <div class=groups-secondary><img alt="Groups of Emails" class=lazyload
+                        src="{{ url_for('static', filename='svg/highlight-groups-secondary.svg') }}"></div><img
+                    alt="Groups of Emails" class=lazyload
+                    src="{{ url_for('static', filename='svg/highlight-groups.svg') }}">
+            </div>
+            <div class="scalable unsubscribe"
+                title="Unsubscribe or Pause unwanted emails. Read Later, or Keep Newest for any subscription">
+                <div class=unsubscribe-button><img alt="Unsubscribe Button" class=lazyload
+                        src="{{ url_for('static', filename='svg/highlight-unsubscribe-button.svg') }}"></div>
+                <img alt=Unsubscribe class="desktop lazyload"
+                    src="{{ url_for('static', filename='svg/highlight-unsubscribe.svg') }}"><img alt=Unsubscribe
+                    class="lazyload phone"
+                    src="{{ url_for('static', filename='svg/highlight-unsubscribe-phone.svg') }}">
+            </div>
+            <div class="autoclean scalable"
+                title="Use Auto Clean to delete, label, or move emails as they arrive, change, or become older">
+                <div class="autoclean-button desktop"><img alt="Auto Clean Button" class=lazyload
+                        src="{{ url_for('static', filename='svg/highlight-autoclean-button.svg') }}"></div>
+                <div class=autoclean-step-1><img alt="Auto Clean Step 1" class=lazyload
+                        src="{{ url_for('static', filename='svg/highlight-autoclean-step-1.svg') }}"></div><img
+                    alt=Arrow class="arrow lazyload"
+                    src="{{ url_for('static', filename='svg/highlight-autoclean-arrow.svg') }}"><img
+                    alt="Auto Clean Actions Example" class=lazyload
+                    src="{{ url_for('static', filename='svg/highlight-autoclean-step-2.svg') }}">
+            </div>
+            <div class="scalable smart-views"
+                title="Smart Views are applied to your mailbox to group similar types of emails"><img
+                    alt="Smart Views" class=lazyload
+                    src="{{ url_for('static', filename='svg/highlight-smartviews.svg') }}"></div>
+        </div>
+    </section>
+</div>
+<section class="block-padding-top-60-mobile-32 mid text-center">
+    <h2> Clean and Organize </h2>
+    <p class=no-bottom-margin> Clean emails from every corner of your account with tools designed to manage or
+        delete thousands of emails at once.
+</section>
+<section class="block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-horizontally-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/quick-clean.svg') }}"></div>
+    <div class="contents-vertically-centered text">
+        <h3>Quick Clean</h3>
+        <p>Quick Clean combines the most commonly cleaned emails into categories like Social Notifications and
+            Emails Older Than 3 years, which can then be moved to the trash or archived in bulk with a single click.
+            Quick Clean is the best way to get started when first cleaning up your email Inbox.
+    </div>
+</section>
+<section class="block-padding-top-60-mobile-32 mid smart-views two-column">
+    <!-- <img class="lazyload swoosh"
+        src=svg/swoosh.svg> -->
+    <div class="contents-vertically-centered text">
+        <h3>Smart Views</h3>
+        <p> Smart Views are predefined filters applied to your entire mailbox &mdash; a great <a href="">email
+                organizer</a>. Cleanzy Email Cleaner uses Smart Views to group similar types of emails together, making it
+            easy to go through all your emails in minutes, sort and clean emails you don't need, or even delete all
+            emails from your mailbox.
+    </div>
+    <div class="contents-vertically-horizontally-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/smartviews.svg') }}" onload=objectify(this)></div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-horizontally-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/groups.svg') }}"></div>
+    <div class="contents-vertically-centered text">
+        <h3>Email Groups</h3>
+        <p>Rather than working with emails one by one, our email cleaner app allows you to work with groups of
+            emails based on things like sender, email address, subject, label, date, recipient, or size.
+        <p>For example, you can group emails by sender to get rid of emails related to a project or everything from
+            a particular sender.
+    </div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered text">
+        <h3>Filters and Sorting</h3>
+        <p>Apply various email filters like "Status" (Read or Unread), "Age" (how long ago was email sent or
+            received), or search by keywords. Then sort emails by age, sender, or size to find and clean emails you
+            no longer need.
+        <p>For example, combining filters, sorting, and groups helps you quickly find and delete all large emails
+            from a sender received more than a year ago.
+    </div>
+    <div class="contents-vertically-horizontally-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/filters.svg') }}"></div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-horizontally-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/people.svg') }}"></div>
+    <div class="contents-vertically-centered text">
+        <h3>Easily see mail from people, mailing lists, or both</h3>
+        <p>A simple filter helps you distinguish emails sent by real people and by automated systems – even if they
+            are pretending to be manually sent!
+    </div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered text">
+        <h3>Find out if your personal information was stolen</h3>
+        <p>Every year millions of email addresses and other sensitive data is illegally obtained by hackers from
+            large websites, banks, and other systems.
+        <p>Privacy Guard by Cleanzy Email Cleaner regularly checks your email against known data breaches and security
+            incidents.
+    </div>
+    <div class="contents-vertically-horizontally-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/privacy-guard.svg') }}"></div>
+</section>
+<div class="hidden overflow unsubscriber wide">
+    <section class="block-padding-top-60-mobile-32 heading">
+        <div class=sun></div>
+        <h2>Unsubscribe from unwanted emails and senders</h2>
+        <p>The unsubscriber tool keeps unwanted emails out of your Inbox by sending Unsubscribe requests or Pausing
+            subscriptions. It can also block emails from senders who do not offer unsubscribe links.
+    </section>
+    <section class="block-padding-bottom-60-mobile-32 two-column">
+        <div class=text><img class=lazyload src="{{ url_for('static', filename='svg/unsubscribe.svg') }}">
+            <div>
+                <h3>Unsubscribe and Block</h3>
+                <p>An Unsubscribe request will be sent on your behalf and incoming mail will be blocked if the
+                    request is not honored &mdash; providing you with a guaranteed way to <a
+                        href=/how-to-unsubscribe-from-emails>unsubscribe from emails</a> from that sender.
+                <p>This approach will keep mail away from your Inbox even if the sender does not offer or does not
+                    respect unsubscribe requests.
+            </div>
+        </div>
+        <div class=text><img class=lazyload src="{{ url_for('static', filename='svg/pause.svg') }}">
+            <div>
+                <h3>Pause, Read Later, Keep Newest</h3>
+                <p>Need a break? Pause the subscription to stop receiving emails from them temporarily
+                <p>Choose "Read Later" to move them out of your Inbox and catch up later, use Keep Newest for emails
+                    that are only relevant until the next one comes in.
+            </div>
+        </div>
+    </section>
+</div>
+<section class="block-padding-top-60-mobile-32 mid text-center">
+    <h2> Automate tasks with Auto Clean </h2>
+    <p> Keep your Inbox clean going forward by automating your email cleaning routine.
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered text">
+        <h3>Read Later</h3>
+        <p>Declutter your Inbox by having emails automatically moved to a dedicated "Read Later" folder by simply
+            selecting “Read Later” within Unsubscriber and Auto Clean. This feature is great for newsletters and
+            similar mail.
+        <p>Selected emails will be delivered to Read Later without notifications keeping you focused until you
+            choose to catch up. Combine with "Keep Newest" to only keep latest editions of your favorite
+            newsletters.
+    </div>
+    <div class="contents-vertically-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/readlater.svg') }}"></div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/keep-latest.svg') }}"></div>
+    <div class="contents-vertically-centered text">
+        <h3>Keep Newest</h3>
+        <p>"Keep Newest" will automatically remove older email once a new similar email arrives. This helps you keep
+            only relevant mail in your Inbox or other folders.
+        <p>"Keep Newest" can work across multiple senders or subjects allowing you to set it up in the most
+            convenient way.
+    </div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered text">
+        <h3>Block</h3>
+        <p>Looking <a href=/how-to-block-an-email-address>how to block an email</a>? This feature allows you to
+            discreetly stop any emails from a sender or a group of senders. Unblock at any time.
+    </div>
+    <div class="contents-vertically-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/block.svg') }}"></div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/mute.svg') }}"></div>
+    <div class="contents-vertically-centered text">
+        <h3>Mute</h3>
+        <p>"Mute" emails from any sender, by subject, or other parameters. Great to avoid being distracted by
+            frequently updated threads.
+    </div>
+</section>
+<section class="mid separator">
+    <hr>
+</section>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 mid two-column">
+    <div class="contents-vertically-centered text">
+        <h3> Auto Archive and keep Inbox clean </h3>
+        <p> Auto Clean emails as they age or become irrelevant. Automatically <a href="">archive emails</a> older
+            than 3 months, delete mail in "Read Later" after you read it, or delete it as it becomes older than 7
+            days, or create any rule based on lots of parameters and filters.
+        <p> Cleanzy Email Cleaner can apply different rules to the same email (for example, you can choose to move an email to
+            "Read Later" and then delete it after 7 days) and offers both simple and advanced Auto Clean rule
+            builder to create rules quickly or target mail with advanced filters.
+    </div>
+    <div class="contents-vertically-centered illustration"><img class=lazyload
+            src="{{ url_for('static', filename='svg/old-email.svg') }}"></div>
+</section>
+<section class="block-margin-bottom-60-mobile-32 digests two-column">
+    <div class=illustration><img class=lazyload src="{{ url_for('static', filename='svg/digest.svg') }}"></div>
+    <div class="contents-vertically-centered text">
+        <h3>Regular Summaries</h3>
+        <p>Cleanzy Email Cleaner will send you a summary of all the activities to make sure you never miss anything important.
+    </div>
+</section>
+<section class="block-padding-top-60-mobile-32 mid providers-clients two-column">
+    <div class="column flex providers text">
+        <div>
+            <h3>Supports all email providers</h3>
+            <p>Cleanzy Email Cleaner supports major email providers like Gmail, Yahoo, AOL, iCloud, and Outlook and any other
+                email provider using IMAP.
+            <p>As a trusted provider, we are verified by Google and are audited annually by independent security
+                companies like Leviathan and Bishop Fox.
+        </div><img alt="Supports all email providers" class=lazyload src="{{ url_for('static', filename='svg/providers.jpg') }}"
+            srcset="/user/pages/02.features/providers-2x.jpg 2x">
+    </div>
+    <div class="clients column flex text">
+        <div>
+            <h3>Works alongside your favorite email client</h3>
+            <p>Since Cleanzy Email Cleaner connects to your mailbox directly, you can continue using any email client you
+                like.
+        </div><img alt="Supports all email providers" class=lazyload
+            src="{{ url_for('static', filename='svg/email-client.jpg') }}"
+            srcset="{{ url_for('static', filename='svg/email-client.jpg') }}">
+    </div>
+</section>
+<div class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 hidden overflow security wide">
+    <section class=narrow><img class="lazyload shield" src="{{ url_for('static', filename='svg/shield.svg') }}"><img
+            class="lazyload shield-shadow" src="{{ url_for('static', filename='svg/shield-shadow.svg') }}">
+        <h3>Private and secure, by design.</h3>
+        <p>Cleanzy Email Cleaner is designed and built with your privacy and security in mind. Your data is stored encrypted
+            and Cleanzy Email Cleaner will never share, give away, sell, analyze, "anonymize", or otherwise use your data. Our
+            algorithms only analyze email headers that contain subject line, sender and recipient information,
+            dates, email size, and similar metadata. We do not access the content of emails or attachments.
+        <p>Your mailbox access details are encrypted. They are not available to anyone at Cleanzy Email Cleaner and they are
+            only used to scan your mailbox and perform selected actions.
+        <p>For more information see the <a href=/privacy_policy>Privacy Policy</a>.
+    </section>
+</div>
+<section class="block-padding-bottom-60-mobile-32 block-padding-top-60-mobile-32 narrow product-card text-center">
+    <img class="block-padding-top-60-mobile-32 lazyload" src="{{ url_for('static', filename='img/image.jfif') }}"
+        onload=objectify(this)>
+    <h2> Try Cleanzy Email Cleaner <span>Today</span></h2>
+    <a class=button
+        href="https://app.clean.email?utm_source=Website&utm_content=features">Download Now</a>
+</section>
+<footer>
+    <section class="section">
+        <div class=one></div>
+            <p> &copy; 2015-2021 Cleanzy Email Cleaner, LLC. All Rights Reserved.</p>
+       
+    </section>
+    {% endblock %}
