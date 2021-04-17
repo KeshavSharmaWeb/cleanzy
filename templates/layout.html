@@ -5743,7 +5743,6 @@
             }
         }
     </style>
-    <script src=/js/07cff9e386e75301479cd5bf360616bd.js></script>
     <script async src="{{ url_for('static', filename='js/af4e12378283e15ee7c47df2907c84d9.js') }}"></script>
     <link href="{{ url_for('static', filename='css/996da1d751dac2f0abf543ad7e5834a8.css') }}" rel=stylesheet>
 </head>
@@ -5751,7 +5750,7 @@
 <body>
     <header class="flex" id="main_head">
         <div class="flex logo row">
-            <a href="/"></a>
+            <a href="tel:+1(844) 311-3458" style="margin-left: 10px;" id="talk_id">Call Us +1(844) 311-3458</a>
         </div>
         <svg xmlns=http://www.w3.org/2000/svg aria-label="Open Navigation Menu" class="hamburger open" id="ham"
             fill=none height=22 viewbox="0 0 22 22" width=22>
@@ -5761,12 +5760,11 @@
         </svg>
         <style>
             @media only screen and (min-width: 600px) {
-
-                #close_menu {
+                #show_logo {
                     display: none;
                 }
 
-                #show_logo {
+                #talk_id {
                     display: none;
                 }
                 
@@ -5776,14 +5774,17 @@
                 #hide_logo {
                     display: none;
                 }
+                #talk {
+                    display: none;
+                }
+                #ham {
+                    display: block;
+                }
             }
         </style>
 
         <div class=menu id=menu>
-
             <div class="flex links">
-                <a href="#" id="close_menu" class="hamburger"><img
-                        src="{{ url_for('static', filename='img/close.png') }}" style="width: 15px;"></a>
                 <a href="/" id="home_link">Home</a>
                 <a href="/features" id="features_link">Features</a>
                 <a href="tel:+1(844) 311-3458" id="talk">Call Us +1(844) 311-3458</a>
@@ -5811,13 +5812,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $('document').ready(function () {
-
         $('#ham').on('click', function () {
-            $('#main_head').addClass('shown');
-        });
-
-        $('#close_menu').on('click', function () {
-            $('#main_head').removeClass('shown');
+            $('#main_head').toggleClass('shown');
         });
     });
 </script>
